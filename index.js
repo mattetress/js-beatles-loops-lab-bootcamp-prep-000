@@ -16,8 +16,8 @@ const facts = [
 
 
 function johnLennonFacts(factArray) {
-  let count = factArray.length;
-  while (count > 0) {
+  let count = factArray.length - 1;
+  while (count >= 0) {
     factArray[count] = `${factArray[count]}!!!`;
     --count;
   } return factArray;
