@@ -16,10 +16,10 @@ const facts = [
 
 
 function johnLennonFacts(factArray) {
-  let count = 0;
-  while (count <= factArray.length) {
+  let count = factArray.length;
+  while (count > 0) {
     factArray[count] = `${factArray[count]}!!!`;
-    count++;
+    --count;
   } return factArray;
 }
 johnLennonFacts(facts);
